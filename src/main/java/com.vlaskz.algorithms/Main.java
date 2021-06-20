@@ -10,7 +10,8 @@ public class Main {
         //Chapter1.ex115(0.999999999999990,0.00000000000001);
         //Chapter1.ex116();
         //Chapter1.ex117();
-        Chapter1.ex118();
+        //Chapter1.ex118();
+        Chapter1.ex119(128);
 
 
 

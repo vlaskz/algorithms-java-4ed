@@ -168,5 +168,21 @@ public class Chapter1 {
         System.out.println(" ");
     }
 
+    public static void ex119(Integer N){
+        /*
+            This method explains how we can convert from integer to a binary. Actually a string that shows the binary
+                code for this integer. The idea is: get the remainder of number by two, add to string, and divide by two,
+                repeating until the number is zero.
+         */
+        System.out.println("Chapter 1 - Exercise 1.1.9");
+
+        String s = "";
+        for(int i=N;i>0;i/=2){
+            s = (i%2)+s;
+        }
+
+        System.out.println(" ");
+    }
+
     
 }

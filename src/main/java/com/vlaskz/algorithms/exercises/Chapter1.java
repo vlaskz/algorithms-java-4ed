@@ -1,5 +1,7 @@
 package com.vlaskz.algorithms.exercises;
 
+import edu.princeton.cs.algs4.StdOut;
+
 public class Chapter1 {
 
     public static void ex111(){
@@ -67,5 +69,37 @@ public class Chapter1 {
          */
         System.out.println("Chapter 1 - Exercise 1.1.3");
         System.out.println(a==b && a==c?"Equal\n":"Not Equal\n");
+    }
+
+    public static void ex114(){
+        System.out.println("a)The statement 'if (a>b) then c=0;' causes an error, because there's no 'then' clause in " +
+                "Java");
+        System.out.println("b)The statement 'if (a>b){ c=0;}' is ok");
+        System.out.println("c)The statement 'if (a>b) c=0;' is ok");
+        System.out.println("b)The statement 'if (a>b) c=0 else b=0' causes an error by missing semicolon(;) in the " +
+                "first instruction");
+    }
+
+    public static void ex115(Double x, Double y){
+        System.out.println(x>0 && x<1 && y>0 && y<1);
+
+    }
+
+    public static void ex116(){
+        /*
+        This calculate Fibonacci series, to its 16th term (change the stop condition in for-loop to get another terms).
+        int f is the first parameter, where int g is the second.
+        Fibonacci works this way: the next term is the sum of the last two terms. 'f' term holds the sum of all series,
+            while 'g' is the next value to be increased.
+        Personally I think this algorithm is very well designed. There's various other approaches.
+
+         */
+        int f = 0;
+        int g = 1;
+        for(int i = 0; i<=15;i++){
+            StdOut.println(f);
+            f = f + g;
+            g = f - g;
+        }
     }
 }

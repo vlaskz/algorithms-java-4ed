@@ -149,4 +149,24 @@ public class Chapter1 {
         }
         System.out.println("");
     }
+    
+    public static void ex118(){
+        /*
+            a) Will print b (the char);
+            b) Will print 197 because there's a sum of the values of (int)'b'[value:98] and (int)'c'[value:99] = 197;
+            c) will print e (char), because it adds more 4 in the position of 'a' pointer and converts to char again:
+                a,b,c,d,e
+                0,1,2,3,4
+                        ^ the pointer after sum. And yes, Java handles pointers in the backstage;
+         */
+        System.out.println("Chapter 1 - Exercise 1.1.8");
+
+        System.out.println('b');
+        System.out.println('b'+'c');
+        System.out.println((char)('a'+4));
+
+        System.out.println(" ");
+    }
+
+    
 }

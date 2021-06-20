@@ -57,5 +57,15 @@ public class Chapter1 {
 
         System.out.println(" ");
 
+
+
+    }
+
+    public static void ex113(Integer a, Integer b, Integer c){
+        /*
+        This exercise takes three parameters (a, b and c) and tests is they are equal, printing the result in console.
+         */
+        System.out.println("Chapter 1 - Exercise 1.1.3");
+        System.out.println(a==b && a==c?"Equal\n":"Not Equal\n");
     }
 }

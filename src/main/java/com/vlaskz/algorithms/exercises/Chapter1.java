@@ -111,7 +111,7 @@ public class Chapter1 {
 
     public static void ex117(){
         /*
-            a) Oversimplificated Square root algorithm.
+            a) Oversimplified Square root algorithm.
             b) The sum of first i terms.
             c) Displays from 0 to i with j stepping.
 

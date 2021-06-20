@@ -14,11 +14,11 @@ public class Chapter1 {
          */
         System.out.println("Chapter 01 - Exercise 01");
         //a)
-        System.out.println((0+15)/2);
+        System.out.println("a) "+(0+15)/2);
         //b)
-        System.out.println(2.0e-6 * 100000000.1);
+        System.out.println("b) "+2.0e-6 * 100000000.1);
         //c)
-        System.out.println(true && false || true && true);
+        System.out.println("c) "+(true && false || true && true));
 
         System.out.println(" ");
     }
@@ -33,14 +33,27 @@ public class Chapter1 {
 
             b) Same case here. When we have arithmetical operations involving numerical types, the compiler always cast
                 the result to most comprehensive type. In this case, is double.
+
+            c) The whole operation isn't arithmetic. It is a comparison: a is greater or equal to b? So the result can
+                only be a boolean (true/false).
+
+            d) The whole operations seems to be a sum, but it is a sum, then a concatenation, and generates a string in
+                the end with value (1+2)+"3" = 3+"3" = "33". This is why i hate javascript.
+
          */
         System.out.println("Chapter 01 - Exercise 02");
         //a)
         Object v1 = (1+2.236)/2;
-        System.out.println("Type: " + v1.getClass().getSimpleName() + " Value: "+ v1);
+        System.out.println("a) Type: " + v1.getClass().getSimpleName() + " Value: "+ v1);
         //b)
         Object v2 = 1+2+3+4.0;
-        System.out.println("Type " + v2.getClass().getSimpleName() + " Value: " + v2);
+        System.out.println("b) Type: " + v2.getClass().getSimpleName() + " Value: " + v2);
+        //c)
+        Object v3 = 4.1>=4;
+        System.out.println("b) Type: " + v3.getClass().getSimpleName() + " Value: " + v3);
+        //d)
+        Object v4 = 1+2+"3";
+        System.out.println("b) Type: " + v4.getClass().getSimpleName() + " Value: " + v4);
 
         System.out.println(" ");
 

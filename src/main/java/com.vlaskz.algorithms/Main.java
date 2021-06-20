@@ -11,7 +11,8 @@ public class Main {
         //Chapter1.ex116();
         //Chapter1.ex117();
         //Chapter1.ex118();
-        Chapter1.ex119(128);
+        //Chapter1.ex119(105);
+        Chapter1.ex1110();
 
 
 

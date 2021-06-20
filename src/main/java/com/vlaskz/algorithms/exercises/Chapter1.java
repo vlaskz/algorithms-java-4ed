@@ -180,6 +180,23 @@ public class Chapter1 {
         for(int i=N;i>0;i/=2){
             s = (i%2)+s;
         }
+        StdOut.println(s);
+
+        System.out.println(" ");
+    }
+    
+    public static void ex1110(){
+        /* 
+            The a variable wasn't initialized, so the code will fail. To make is runnable, I have initialized.
+         */
+        System.out.println("Chapter 1 - Exercise 1.1.10");
+
+            int[] a = new int[10];
+
+            for(int i = 0;i<10;i++){
+                a[i] = i*i;
+                StdOut.println(a[i]);
+            }
 
         System.out.println(" ");
     }

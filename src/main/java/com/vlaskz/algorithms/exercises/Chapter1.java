@@ -72,16 +72,20 @@ public class Chapter1 {
     }
 
     public static void ex114(){
+        System.out.println("Chapter 1 - Exercise 1.1.4");
         System.out.println("a)The statement 'if (a>b) then c=0;' causes an error, because there's no 'then' clause in " +
                 "Java");
         System.out.println("b)The statement 'if (a>b){ c=0;}' is ok");
         System.out.println("c)The statement 'if (a>b) c=0;' is ok");
         System.out.println("b)The statement 'if (a>b) c=0 else b=0' causes an error by missing semicolon(;) in the " +
                 "first instruction");
+        System.out.println(" ");
     }
 
     public static void ex115(Double x, Double y){
+        System.out.println("Chapter 1 - Exercise 1.1.5");
         System.out.println(x>0 && x<1 && y>0 && y<1);
+        System.out.println(" ");
 
     }
 
@@ -94,6 +98,7 @@ public class Chapter1 {
         Personally I think this algorithm is very well designed. There's various other approaches.
 
          */
+        System.out.println("Chapter 1 - Exercise 1.1.6");
         int f = 0;
         int g = 1;
         for(int i = 0; i<=15;i++){
@@ -101,5 +106,47 @@ public class Chapter1 {
             f = f + g;
             g = f - g;
         }
+        System.out.println(" ");
+    }
+
+    public static void ex117(){
+        /*
+            a) Oversimplificated Square root algorithm.
+            b) The sum of first i terms.
+            c) Displays from 0 to i with j stepping.
+
+         */
+        System.out.println("Chapter 1 - Exercise 1.1.7 ");
+        //a)
+        System.out.println("a)");
+        Double t = 9.0;
+        while(Math.abs(t-9.0/t)>.001){
+            t = (9.0/t + t) /2.0;
+            StdOut.printf("%.5f\n",t);
+        }
+        System.out.println(" ");
+
+        //b)
+        System.out.println("b)");
+        int sum = 0;
+        for(int i = 1; i<1000; i++){
+            for(int j = 0; j<i; j++){
+                sum++;
+            }
+            StdOut.println(sum);
+        }
+        System.out.println(" ");
+
+        //c throws an error: There's no N var declared, so I declared an arbitrary number.)
+        System.out.println("c)");
+        int sum2 = 0;
+        int N = 10;
+        for (int i=1;i<1000;i++){
+            for (int j = 0; j< N; j++){
+                sum2++;
+            }
+            StdOut.println(sum2);
+        }
+        System.out.println("");
     }
 }

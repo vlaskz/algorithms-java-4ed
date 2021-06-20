@@ -12,7 +12,10 @@ public class Main {
         //Chapter1.ex117();
         //Chapter1.ex118();
         //Chapter1.ex119(105);
-        Chapter1.ex1110();
+        //Chapter1.ex1110();
+        //Boolean arr[][] = {{true,false,true},{false,true,false},{true,false,true}};
+        //Chapter1.ex1111(arr);
+        Chapter1.ex1112();
 
 
 

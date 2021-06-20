@@ -201,5 +201,44 @@ public class Chapter1 {
         System.out.println(" ");
     }
 
+    public static void ex1111(Boolean arr[][]){
+        /*
+            This algorithm just substitutes the boolean matrix by asterisks and spaces.
+         */
+        System.out.println("Chapter 1 - Exercise 1.1.11");
+
+        var width = arr.length;
+        var height = arr[0].length;
+
+        for(int i = 0; i<width;i++){
+            for(int j = 0;j<height;j++){
+                StdOut.print(arr[i][j]?"*":" ");
+            }
+            System.out.println();
+        }
+        System.out.println(" ");
+    }
+    
+    public static void ex1112(){
+        /*
+         This method creates a numerical vertical palindrome with the given length. In the book, we are solicited to
+            print i, but this leads to print just 0..9. Instead, I printed a[i] and voìla: there's the result.
+         */
+        System.out.println("Chapter 1 - Exercise 1.1.12");
+
+        int a[] = new int[10];
+        for(int i=0;i<10;i++){
+            a[i]=9-i;
+        }
+        for(int i=0;i<10;i++){
+            a[i] = a[a[i]];
+        }
+        for(int i=0;i<10;i++){
+            System.out.println(a[i]);
+        }
+       
+        System.out.println(" ");
+    }
+
     
 }

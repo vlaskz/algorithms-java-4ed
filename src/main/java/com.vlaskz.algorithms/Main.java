@@ -15,7 +15,14 @@ public class Main {
         //Chapter1.ex1110();
         //Boolean arr[][] = {{true,false,true},{false,true,false},{true,false,true}};
         //Chapter1.ex1111(arr);
-        Chapter1.ex1112();
+        //Chapter1.ex1112();
+        Object arr[][] = {
+                {1,2,3},
+                {4,5,6},
+                {7,8,9},
+                {10,11,12},
+                {13,14,15}};
+        Chapter1.ex1113(arr);
 
 
 

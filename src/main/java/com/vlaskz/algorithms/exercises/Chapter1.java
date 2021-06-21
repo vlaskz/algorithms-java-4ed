@@ -4,7 +4,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class Chapter1 {
 
-    public static void ex111(){
+    public static void ex111() {
         /*
             Explanation:
             a) 0+15/2 exact result should return 7.5, but because of int typing, result was truncated to 7;
@@ -16,16 +16,16 @@ public class Chapter1 {
          */
         System.out.println("Chapter 01 - Exercise 01");
         //a)
-        System.out.println("a) "+(0+15)/2);
+        System.out.println("a) " + (0 + 15) / 2);
         //b)
-        System.out.println("b) "+2.0e-6 * 100000000.1);
+        System.out.println("b) " + 2.0e-6 * 100000000.1);
         //c)
-        System.out.println("c) "+(true && false || true && true));
+        System.out.println("c) " + (true && false || true && true));
 
         System.out.println(" ");
     }
 
-    public static void ex112(){
+    public static void ex112() {
         /*
             **Note: Object class was used to force type inference by compiler. The method getClass().getSimpleName returns
                 the RUNTIME type inferred by JVM.**
@@ -45,33 +45,32 @@ public class Chapter1 {
          */
         System.out.println("Chapter 01 - Exercise 02");
         //a)
-        Object v1 = (1+2.236)/2;
-        System.out.println("a) Type: " + v1.getClass().getSimpleName() + " Value: "+ v1);
+        Object v1 = (1 + 2.236) / 2;
+        System.out.println("a) Type: " + v1.getClass().getSimpleName() + " Value: " + v1);
         //b)
-        Object v2 = 1+2+3+4.0;
+        Object v2 = 1 + 2 + 3 + 4.0;
         System.out.println("b) Type: " + v2.getClass().getSimpleName() + " Value: " + v2);
         //c)
-        Object v3 = 4.1>=4;
+        Object v3 = 4.1 >= 4;
         System.out.println("b) Type: " + v3.getClass().getSimpleName() + " Value: " + v3);
         //d)
-        Object v4 = 1+2+"3";
+        Object v4 = 1 + 2 + "3";
         System.out.println("b) Type: " + v4.getClass().getSimpleName() + " Value: " + v4);
 
         System.out.println(" ");
 
 
-
     }
 
-    public static void ex113(Integer a, Integer b, Integer c){
+    public static void ex113(Integer a, Integer b, Integer c) {
         /*
         This exercise takes three parameters (a, b and c) and tests is they are equal, printing the result in console.
          */
         System.out.println("Chapter 1 - Exercise 1.1.3");
-        System.out.println(a==b && a==c?"Equal\n":"Not Equal\n");
+        System.out.println(a == b && a == c ? "Equal\n" : "Not Equal\n");
     }
 
-    public static void ex114(){
+    public static void ex114() {
         System.out.println("Chapter 1 - Exercise 1.1.4");
         System.out.println("a)The statement 'if (a>b) then c=0;' causes an error, because there's no 'then' clause in " +
                 "Java");
@@ -82,14 +81,14 @@ public class Chapter1 {
         System.out.println(" ");
     }
 
-    public static void ex115(Double x, Double y){
+    public static void ex115(Double x, Double y) {
         System.out.println("Chapter 1 - Exercise 1.1.5");
-        System.out.println(x>0 && x<1 && y>0 && y<1);
+        System.out.println(x > 0 && x < 1 && y > 0 && y < 1);
         System.out.println(" ");
 
     }
 
-    public static void ex116(){
+    public static void ex116() {
         /*
         This calculate Fibonacci series, to its 16th term (change the stop condition in for-loop to get another terms).
         int f is the first parameter, where int g is the second.
@@ -101,7 +100,7 @@ public class Chapter1 {
         System.out.println("Chapter 1 - Exercise 1.1.6");
         int f = 0;
         int g = 1;
-        for(int i = 0; i<=15;i++){
+        for (int i = 0; i <= 15; i++) {
             StdOut.println(f);
             f = f + g;
             g = f - g;
@@ -109,7 +108,7 @@ public class Chapter1 {
         System.out.println(" ");
     }
 
-    public static void ex117(){
+    public static void ex117() {
         /*
             a) Oversimplified Square root algorithm.
             b) The sum of first i terms.
@@ -120,17 +119,17 @@ public class Chapter1 {
         //a)
         System.out.println("a)");
         Double t = 9.0;
-        while(Math.abs(t-9.0/t)>.001){
-            t = (9.0/t + t) /2.0;
-            StdOut.printf("%.5f\n",t);
+        while (Math.abs(t - 9.0 / t) > .001) {
+            t = (9.0 / t + t) / 2.0;
+            StdOut.printf("%.5f\n", t);
         }
         System.out.println(" ");
 
         //b)
         System.out.println("b)");
         int sum = 0;
-        for(int i = 1; i<1000; i++){
-            for(int j = 0; j<i; j++){
+        for (int i = 1; i < 1000; i++) {
+            for (int j = 0; j < i; j++) {
                 sum++;
             }
             StdOut.println(sum);
@@ -141,16 +140,16 @@ public class Chapter1 {
         System.out.println("c)");
         int sum2 = 0;
         int N = 10;
-        for (int i=1;i<1000;i++){
-            for (int j = 0; j< N; j++){
+        for (int i = 1; i < 1000; i++) {
+            for (int j = 0; j < N; j++) {
                 sum2++;
             }
             StdOut.println(sum2);
         }
         System.out.println("");
     }
-    
-    public static void ex118(){
+
+    public static void ex118() {
         /*
             a) Will print b (the char);
             b) Will print 197 because there's a sum of the values of (int)'b'[value:98] and (int)'c'[value:99] = 197;
@@ -162,13 +161,13 @@ public class Chapter1 {
         System.out.println("Chapter 1 - Exercise 1.1.8");
 
         System.out.println('b');
-        System.out.println('b'+'c');
-        System.out.println((char)('a'+4));
+        System.out.println('b' + 'c');
+        System.out.println((char) ('a' + 4));
 
         System.out.println(" ");
     }
 
-    public static void ex119(Integer N){
+    public static void ex119(Integer N) {
         /*
             This method explains how we can convert from integer to a binary. Actually a string that shows the binary
                 code for this integer. The idea is: get the remainder of number by two, add to string, and divide by two,
@@ -177,31 +176,31 @@ public class Chapter1 {
         System.out.println("Chapter 1 - Exercise 1.1.9");
 
         String s = "";
-        for(int i=N;i>0;i/=2){
-            s = (i%2)+s;
+        for (int i = N; i > 0; i /= 2) {
+            s = (i % 2) + s;
         }
         StdOut.println(s);
 
         System.out.println(" ");
     }
-    
-    public static void ex1110(){
+
+    public static void ex1110() {
         /* 
             The a variable wasn't initialized, so the code will fail. To make is runnable, I have initialized.
          */
         System.out.println("Chapter 1 - Exercise 1.1.10");
 
-            int[] a = new int[10];
+        int[] a = new int[10];
 
-            for(int i = 0;i<10;i++){
-                a[i] = i*i;
-                StdOut.println(a[i]);
-            }
+        for (int i = 0; i < 10; i++) {
+            a[i] = i * i;
+            StdOut.println(a[i]);
+        }
 
         System.out.println(" ");
     }
 
-    public static void ex1111(Boolean arr[][]){
+    public static void ex1111(Boolean arr[][]) {
         /*
             This algorithm just substitutes the boolean matrix by asterisks and spaces.
          */
@@ -210,16 +209,16 @@ public class Chapter1 {
         var width = arr.length;
         var height = arr[0].length;
 
-        for(int i = 0; i<width;i++){
-            for(int j = 0;j<height;j++){
-                StdOut.print(arr[i][j]?"*":" ");
+        for (int i = 0; i < width; i++) {
+            for (int j = 0; j < height; j++) {
+                StdOut.print(arr[i][j] ? "*" : " ");
             }
             System.out.println();
         }
         System.out.println(" ");
     }
-    
-    public static void ex1112(){
+
+    public static void ex1112() {
         /*
          This method creates a numerical vertical palindrome with the given length. In the book, we are solicited to
             print i, but this leads to print just 0..9. Instead, I printed a[i] and voìla: there's the result.
@@ -227,18 +226,49 @@ public class Chapter1 {
         System.out.println("Chapter 1 - Exercise 1.1.12");
 
         int a[] = new int[10];
-        for(int i=0;i<10;i++){
-            a[i]=9-i;
+        for (int i = 0; i < 10; i++) {
+            a[i] = 9 - i;
         }
-        for(int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             a[i] = a[a[i]];
         }
-        for(int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             System.out.println(a[i]);
         }
-       
+
         System.out.println(" ");
     }
 
-    
+    public static void ex1113(Object a[][]) {
+        /*
+            This exercise is a matrix trasposition (where lines becomes columns and columns, lines).
+         */
+        System.out.println("Chapter 1 - Exercise 1.1.13");
+
+        var c = a.length;
+        var r = a[0].length;
+
+
+        Object t[][] = new Object[r][c];
+        for (int i = 0; i < c; i++) {
+            for (int j = 0; j < r; j++) {
+                t[j][i] = a[i][j];
+                System.out.print(a[i][j] + " ");
+
+            }
+            System.out.println(" ");
+        }
+
+        for(int i = 0; i < r;i++){
+            for(int  j = 0;j < c;j++){
+                StdOut.print(t[i][j] + " ");
+            }
+            System.out.println(" ");
+        }
+
+        System.out.println(" ");
+    }
 }
+
+    
+
